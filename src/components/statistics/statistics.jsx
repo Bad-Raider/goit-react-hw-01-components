@@ -9,7 +9,7 @@ export const Statistics = ({stats, title}) => {
 
             <ul className={css.statList}>
                 {stats.map(stat => (
-                   <li style={bgrColor} key={stat.id} className={css.item}>
+                   <li style={{ backgroundColor: getRandomColor() }} key={stat.id} className={css.item}>
                     <span className={css.label}>{stat.label}</span>
                     <span className="percentage">{stat.percentage +"%"}</span>
                    </li>
@@ -35,5 +35,3 @@ function getRandomColor() {
   const b = Math.floor(Math.random() * 256);
   return `rgb(${r}, ${g}, ${b})`;
 }
-
-const bgrColor = {backgroundColor: getRandomColor()};
