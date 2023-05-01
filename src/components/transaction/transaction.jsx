@@ -14,8 +14,10 @@ export const TransactionHistory = ({items}) => {
                 </thead>
 
                 <tbody>
-                    {items.map(transaction => (
-                        <tr key={transaction.id}>
+                    {items.map((transaction, index) => (
+                        <tr key={transaction.id} style={
+                            isEven(index) ? {backgroundColor: "rgb(13, 213, 113)"}: {backgroundColor: "#dcd7d7"}
+                        }>
                         <td>{transaction.type}</td>
                         <td>{transaction.amount}</td>
                         <td>{transaction.currency}</td>
@@ -36,3 +38,9 @@ TransactionHistory.propTypes = {
     })
     ) 
 };
+
+
+function isEven(number) {
+  return number % 2 === 0;
+}
+
