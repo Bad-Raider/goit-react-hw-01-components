@@ -1,0 +1,36 @@
+.sectionsFriend{
+    margin-top: 50px;
+}
+
+.item{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px;
+    width: 200px;
+
+    box-shadow: 0 0 7px rgba(0, 0, 0, 0.5);
+}
+
+.item:not(:last-child){
+    margin-bottom: 15px;
+}
+
+
+.isOnline{
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+    background-color: greenyellow; 
+}
+
+.isOfline{
+    /* composes: isOnline; */
+    width: 10px;
+    height: 10px;
+    border-radius: 50px;
+
+    background-color: red;
+}

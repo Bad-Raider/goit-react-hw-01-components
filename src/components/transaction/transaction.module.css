@@ -1,0 +1,27 @@
+.sectionTransaction {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.transactionHistory {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.transactionHistory th,
+.transactionHhistory td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #111111;
+  background-color: darkcyan;
+}
+
+tbody {
+  background-color: #dcd7d7;
+}
+
+tbody td{
+    text-align: center;
+    border: 1px solid #111111;
+}
