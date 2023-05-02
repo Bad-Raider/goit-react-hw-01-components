@@ -25,8 +25,8 @@ Statistics.propTypes = {
         PropTypes.shape({
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired,
-    })
-    ) 
+    }).isRequired
+    ).isRequired 
 };
 
 function getRandomColor() {
